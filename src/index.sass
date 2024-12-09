@@ -1,0 +1,93 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+@import url('./assets/sass/icons.sass')
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-UltraLight.ttf')
+  font-weight: 100
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-Light.ttf')
+  font-weight: 300
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-Regular.ttf')
+  font-weight: 400
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-Medium.ttf')
+  font-weight: 500
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-SemiBold.ttf')
+  font-weight: 600
+
+@font-face
+  font-family: Gilroy
+  src: url('./assets/fonts/Gilroy-Bold.ttf')
+  font-weight: 700
+
+@font-face
+  font-family: Source Sans Pro
+  src: url('./assets/fonts/SourceSansPro-Regular.ttf')
+  font-weight: 400
+
+body
+  font-family: 'Gilroy',   sans-serif, 'Source Sans Pro', sans-serif
+  @apply bg-gray-50
+
+button, input
+  height: 48px
+
+.btn-light
+  @apply border-2 border-primary text-primary rounded-full transition hover:bg-primary hover:text-white
+
+.container
+  max-width: 1280px !important
+
+.btn-gradient
+  background: linear-gradient(107.89deg, #194185 8.23%, #038AE4 92.87%)
+
+
+.hide-scrollbar::-webkit-scrollbar
+  display: none
+
+input[type="range"]::-webkit-slider-thumb
+  pointer-events: auto
+  width: 16px
+  height: 24px
+  border-radius: 50%
+  -webkit-appearance: none
+  background: #038AE4
+  cursor: pointer
+
+input[type="range"]::-moz-range-thumb
+  pointer-events: auto
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  -webkit-appearance: none
+  background: #038AE4
+  cursor: pointer
+
+input[type="range"]::-ms-thumb
+  pointer-events: auto
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  -webkit-appearance: none
+  background: #038AE4
+  cursor: pointer
+
+.hide-scrollbar
+  -ms-overflow-style: none 
+  scrollbar-width: none
+
+
+

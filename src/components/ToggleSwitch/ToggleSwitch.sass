@@ -1,0 +1,24 @@
+input:checked + .slider 
+        background:  linear-gradient(107.89deg, #0048C1 8.23%, #1E91DD 92.87%)
+
+input:checked + .slider:before 
+    -webkit-transform: translateX(17px)
+    -ms-transform: translateX(17px)
+    transform: translateX(17px)
+
+
+.slider 
+        
+    &:before 
+        @apply absolute h-4 w-4 left-1 bottom-1 bg-white 
+        content: "" 
+        -webkit-transition: .4s
+        transition: 
+            duration: .4s
+
+    &.round:before 
+      @apply rounded-[50%] 
+
+
+
+    

@@ -1,0 +1,20 @@
+.dark-mode-switch
+  height: 30px
+  width: 56px
+  @apply border border-primary rounded-full flex items-center relative dark:border-white
+
+  .icon
+    @apply stroke-current text-primary translate-x-1 transition dark:text-white
+
+  .switcher-element
+    height: 24px
+    width: 24px
+    right: 0
+    @apply transition bg-primary rounded-full absolute -translate-x-0.5 dark:bg-white
+
+  &__active
+    .icon
+      @apply translate-x-[28px]
+
+    .switcher-element
+      @apply -translate-x-[28px]
